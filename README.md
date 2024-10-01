@@ -1,26 +1,36 @@
-## Shortcut Learning
+# Shortcut Learning - For Mac
 
-An extension to (slowly) but truly learn about vscode shortcuts.
+An extension to learn VS Code shortcuts for Mac by notifying you of keyboard shortcuts for commands you use.
 
-VS Code has a lot of shortcuts. This extension aims to help you learn more of them *one at a time*. Often times I discover a new shortcut and forget it a few days later. This extension adds the shortcut to the status bar so that you can glance down and see it. I figure that if I see it every time I open VS Code, I'll remember it.
+## Features
 
-The shortcuts used in this extension were found from the [VS Code documentation](https://code.visualstudio.com/shortcuts/learn-keyboard-shortcuts-windows.pdf).
+This extension helps you learn VS Code keyboard shortcuts by:
 
+1. Monitoring the commands you execute in VS Code.
+2. Notifying you of the corresponding keyboard shortcut when you use a command that has one.
+3. Supporting both default VS Code keybindings and custom user keybindings.
 
-Note - Currently only has shortcuts for Windows
+## How it works
 
-### Status bar 
-In the bottom corner you will see the current shortcut. Hovering over it will show you the shortcut and the description.
-![status bar](https://raw.githubusercontent.com/monil-patel/vscode-keyboard-shortcut-ext/main/media/status-bar-hover.png)
+When you execute a command in VS Code (e.g., through the Command Palette or by clicking a menu item), the extension will check if there's a keyboard shortcut associated with that command. If there is, it will show a notification with the command name and its keyboard shortcut.
 
+## Custom Keybindings
 
+This extension supports reading your custom keybindings. When enabled, it will provide notifications for commands you use with their associated keyboard shortcuts, helping you learn your personalized shortcuts.
 
-### More information 
-Clicking on the status bar item lets you see more information about the shortcut. It also lets you choose a new shortcut to learn.
-![more info](https://raw.githubusercontent.com/monil-patel/vscode-keyboard-shortcut-ext/main/media/more-info.png)
+To enable this feature:
 
+1. Open VS Code settings
+2. Search for "Shortcut Learning"
+3. Check the box for "Use Custom Keybindings"
+4. Restart VS Code
 
+Note: Enabling this feature allows the extension to read your custom keybindings file and monitor command executions. This is done to provide personalized shortcut suggestions and may have a slight impact on performance. Your privacy and system resources are respected, and no data is collected or sent outside your local machine.
 
-### Choosing a category of shortcuts
-I personally want to get better at keyboard shortcuts for editing. So I can choose that category and only see shortcuts for editing.
-![Starting point](https://raw.githubusercontent.com/monil-patel/vscode-keyboard-shortcut-ext/main/media/choose-shortcut.png)
+## Credits
+
+This extension is based on the original work by Monil Patel (https://github.com/monil-patel/vscode-keyboard-shortcut-ext). The original concept and base implementation have been modified and extended to provide a different learning approach.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.

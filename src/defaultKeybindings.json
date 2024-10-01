@@ -1,0 +1,14 @@
+[
+  {
+    "key": "cmd+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.openSettings"
+  }
+]
